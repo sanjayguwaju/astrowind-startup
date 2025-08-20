@@ -114,6 +114,10 @@ export const headerData = {
       text: 'Widgets',
       href: '#',
     },
+    {
+      text: 'Services',
+      href: getPermalink('/services'),
+    },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
 };

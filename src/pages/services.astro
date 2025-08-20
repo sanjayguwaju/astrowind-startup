@@ -8,6 +8,11 @@ import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
   title: 'Services',
+  description: 'Explore our range of services and solutions to elevate your business.',
+  image: {
+    src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+    alt: 'AstroWind Services Image',
+  },
 };
 ---
 
@@ -16,8 +21,8 @@ const metadata = {
 
   <Hero
     tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
+    title="Elevate your Business needs with our stunning designs"
+    subtitle="Explore our crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
     actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
@@ -28,7 +33,7 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Explore our diverse templates"
+    title="Explore our Product & Services"
     subtitle="Discover our selection below to streamline and elevate your projects."
     columns={3}
     items={[
@@ -39,15 +44,10 @@ const metadata = {
         icon: 'tabler:school',
       },
       {
-        title: 'Interior Design',
+        title: 'Graphic Design',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
-      },
-      {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
+          'Our templates provide a solid foundation for creating stunning visual content. With a focus on layout and typography, they empower designers to bring their ideas to life.',
+        icon: 'tabler:brush',
       },
       {
         title: 'E-commerce',
@@ -68,21 +68,39 @@ const metadata = {
         icon: 'tabler:building-store',
       },
       {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
         title: 'Medical',
         description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
         icon: 'tabler:vaccine',
       },
       {
-        title: 'Fashion Design',
+        title: 'Real Estate',
         description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'Our Real Estate templates are designed to showcase properties effectively, with a focus on high-quality images and detailed descriptions.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Media',
+        description:
+          'Our Media templates are designed to effectively showcase various forms of media content, with a focus on layout and visual storytelling.',
+        icon: 'tabler:photo',
+      },
+      {
+        title: 'Cloud Services',
+        description:
+          'Our Cloud Services templates are designed to help you create scalable and efficient cloud-based applications, with a focus on architecture and deployment best practices.',
+        icon: 'tabler:cloud',
+      },
+      {
+        title: 'Web Design',
+        description:
+          'Our Web Design templates are crafted to create visually stunning and user-friendly websites, with a focus on modern design trends and best practices.',
+        icon: 'tabler:layout',
+      },
+      {
+        title: 'Mobile App',
+        description:
+          'Our Mobile App templates are designed to help you create engaging and user-friendly mobile applications, with a focus on responsive design and performance.',
+        icon: 'tabler:device-mobile',
       },
     ]}
   />
@@ -203,7 +221,7 @@ const metadata = {
     callToAction={{
       target: '_blank',
       text: 'More testimonials...',
-      href: 'https://github.com/arthelokyo/astrowind',
+      href: '/404',
       icon: 'tabler:chevron-right',
     }}
   />
